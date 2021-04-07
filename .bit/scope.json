@@ -1,0 +1,9 @@
+{
+    "name": "bit-env-testing",
+    "remotes": {},
+    "version": "1.0.42",
+    "lanes": {
+        "current": "master",
+        "tracking": []
+    }
+}
