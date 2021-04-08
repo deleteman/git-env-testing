@@ -58,17 +58,12 @@
     /**
      * "*" is a special rule which applied on all components in the workspace.
      **/
-    
-    "{components/example}": {
-      /**
-       * uncomment to apply the react environment on all components.
-       **/
-      "teambit.envs/envs": {
-        "env": "components/custom-node-env"
-      }
-    },
-    "{extensions/*}": {
+    "{components/custom-node-env}": {
       "teambit.harmony/aspect": {}
+    },
+    "{components/example}": {
+       "components/custom-node-env": {}
     }
+    
   }
 }
