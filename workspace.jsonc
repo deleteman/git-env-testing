@@ -22,7 +22,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "components"
+    "defaultScope": "deleteman.test"
   },
   /**
    * main configuration for component dependency resolution.
@@ -33,10 +33,7 @@
      */
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
-      "dependencies": {
-        "@teambit/envs": "0.0.344",
-        "@teambit/node": "0.0.344"
-      },
+      "dependencies": {},
       "peerDependencies": {
         "react": "16.13.1",
         "react-dom": "16.13.1"
@@ -48,7 +45,6 @@
     ],
     "strictPeerDependencies": true
   },
-  
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
    * this is extremely useful for upgrading, aligning and building components with a
@@ -58,12 +54,11 @@
     /**
      * "*" is a special rule which applied on all components in the workspace.
      **/
-    "{components/custom-node-env}": {
+    "extensions": {
       "teambit.harmony/aspect": {}
     },
-    "{components/example}": {
-       "components/custom-node-env": {}
+    "components": {
+      "deleteman.test/my-node": {}
     }
-    
   }
 }
